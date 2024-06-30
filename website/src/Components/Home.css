@@ -1,0 +1,353 @@
+/* src/components/Home.css */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white; /* Set default text color to white */
+}
+
+.background-image {
+    width: 101%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    opacity: 1.0;
+    margin-top: -20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.overlay h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Poppins;
+    margin-top: -112px;
+}
+
+.overlay h2 {
+    font-size: 3.2rem;
+    margin-top: 12px;
+    font-family: Poppins;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 290px; /* Increase width as needed */
+}
+
+.search-bar .icon {
+    margin-right: 10px;
+    color: #E7760D;
+    font-size: 27px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 100%; /* Ensure input takes full width */
+}
+
+.search-button {
+    background-color: #00732F;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: -1px;
+}
+
+.search-button:hover {
+    background-color: darkgreen;
+}
+
+.buyer-info {
+    margin-top: 50px;
+    font-size: 1.3rem;
+}
+
+.buyer-info .post-link {
+    margin-left: 10px;
+    color: white; /* Green color for the link */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.buyer-info .post-link:hover {
+    color: rgb(55, 55, 184); /* Darker green on hover */
+}
+
+.info-section {
+    margin-top: 40px; /* Adjust margin to place it below the image */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    text-align: left; /* Align text to the left */
+    color:black;
+}
+
+.info-section h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-left: -280px;
+}
+
+.info-section p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-left: -280px;
+    word-wrap: break-word;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 30px; /* Adjust as needed */
+    margin-top: -190px; /* Adjust top margin as needed */
+    width: 60%; /* Ensure buttons take up half of the width */
+    max-width: 900px; /* Limit width to ensure responsiveness */
+    margin-right: -280px; /* Add right margin to shift container to the right */
+}
+
+.column {
+    display: flex;
+    flex-direction: column; /* Ensure buttons are displayed in a column */
+    gap: 20px; /* Adjust spacing between buttons */
+}
+
+.column .button {
+    background-color: white;
+    color: black;
+    border: 2px solid orange;
+    padding: 12px 40px;
+    cursor: pointer;
+    /* font-weight: bold; */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ensure buttons take full width of their container */
+    font-size: 18px;
+}
+
+.column .button:hover {
+    background-color: white;
+    color: black;
+}
+
+.signup-button {
+    background-color: #00732F; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 30px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Bold text */
+    border-radius: 5px; /* Rounded corners */
+    display: flex; /* Flexbox for icon positioning */
+    align-items: center; /* Vertically center the content */
+    font-size: 1rem; /* Font size for the button text */
+    gap: 10px; /* Space between text and icon */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    margin-top: 10px; /* Space above the button */
+    text-align: left;
+    margin-left: -1120px;
+}
+
+.signup-button:hover {
+    background-color: darkgreen; /* Darker green on hover */
+}
+
+.signup-button .icon {
+    font-size: 1.6rem; /* Size for the icon */
+    margin-left: 30px;
+}
+
+.additional-box {
+    background-color: #072F57;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 120px;
+    width: 83%;
+    max-width: 1400px;
+    margin-right: 100px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.additional-content {
+    flex: 1;
+    margin-left: 630px;
+    margin-top: -660px;
+}
+
+/* .additional-content h2 {
+    color: #E7760D;
+} */
+
+.orange-underline {
+    width: 15%;
+    height: 2px;
+    background-color: orange;
+    margin-top: -50px;
+    margin-right: 100px;
+}
+
+.tick-icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.green-icon {
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the icon horizontally and vertically */
+    width: 40%;
+    height: 40%;
+}
+
+.green-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.video-container {
+    flex: 1;
+    margin-right: 10px;
+    margin-top: -30px;
+}
+.video-container iframe {
+    position: absolute;
+    top: 1100px;
+    left: 80px;
+    width: 35%;
+    height: 40%;
+    border-radius: 8px;
+}
+
+.tab-container1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 620px;
+    margin-right: 380px;
+}
+.orange-underline1 {
+    border-bottom: 2px solid #E7760D;
+    margin-bottom: 5px;
+    height:-5px;
+    width:13%;
+    margin-left: 24px;
+    margin-top: -20px;
+
+}
+
+.tab {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.tab:hover {
+    background-color: none;
+}
+
+.tab.active {
+    background-color: none;
+    color:orange;
+}
+.supplier-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E8FBFF;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1470px;
+    margin-top: 100px; /* Adjust this as needed */
+    text-align: center; /* Center the text */
+    position: relative;
+    height:100px;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: -890px;
+    color: black;
+    text-align: left;
+}
+
+.orange-underline2 {
+    width: 10%;
+    height: 2px;
+    background-color: #E7760D;
+    /* margin-right: -320px;
+    margin-top: 340px; */
+    position: absolute;
+    margin-top: 85px;
+    margin-left: -650px;
+    border: 1px solid #E7760D;
+
+}
+
+.get-verified-button {
+    background-color: #E7760D;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 40px; /* Adjust to position the button at the bottom */
+    margin-left: 850px;
+    margin-top: -190px;
+}
