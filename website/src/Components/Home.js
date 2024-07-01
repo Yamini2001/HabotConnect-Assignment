@@ -4,6 +4,9 @@ import { FaBusinessTime, FaMapMarkerAlt, FaCheck } from 'react-icons/fa';
 import backgroundImage from '../images/building1.png'; // Adjust path to your background image
 import { useAuth0 } from '@auth0/auth0-react';
 import { GoArrowRight } from "react-icons/go";
+import HowItWorks from './HowItWorks';
+import Footer from './Footer.';
+
 
 const Home = () => {
     const { loginWithRedirect } = useAuth0();
@@ -70,61 +73,61 @@ const Home = () => {
                     ></iframe>
                 </div>
                 <div className="additional-content">
-                    <div className="tab-container1">
-                        <div className={`tab ${activeTab === 'buyer' ? 'active' : ''}`} onClick={() => handleTabClick('buyer')}>
-                            <h2>Buyer</h2>
-                        </div>
-                        <div className={`tab ${activeTab === 'supplier' ? 'active' : ''}`} onClick={() => handleTabClick('supplier')}>
-                            <h2>Supplier</h2>
-                        </div>
-                    </div>
-                    {activeTab === 'buyer' && (
-                        <div>
-                            <div className="orange-underline1"></div>
-                            <div className="tick-icon-text">
-                                <div className="green-circle">
-                                    <FaCheck className="green-icon" />
-                                </div>
-                                <p>Post your requirements</p>
-                            </div>
-                            <div className="tick-icon-text">
-                                <div className="green-circle">
-                                    <FaCheck className="green-icon" />
-                                </div>
-                                <p>Sit back for multiple suppliers to contact you.</p>
-                            </div>
-                            <div className="tick-icon-text">
-                                <div className="green-circle">
-                                    <FaCheck className="green-icon" />
-                                </div>
-                                <p>Choose among the suppliers based on the ratings and reviews.</p>
-                            </div>
-                        </div>
-                    )}
-                    {activeTab === 'supplier' && (
-                        <div>
-                            <div className="orange-underline1"></div>
-                            <div className="tick-icon-text">
-                                <div className="green-circle">
-                                    <FaCheck className="green-icon" />
-                                </div>
-                                <p>Create your service listings</p>
-                            </div>
-                            <div className="tick-icon-text">
-                                <div className="green-circle">
-                                    <FaCheck className="green-icon" />
-                                </div>
-                                <p>Receive inquiries from potential buyers.</p>
-                            </div>
-                            <div className="tick-icon-text">
-                                <div className="green-circle">
-                                    <FaCheck className="green-icon" />
-                                </div>
-                                <p>Connect with verified buyers.</p>
-                            </div>
-                        </div>
-                    )}
+    <div className="tab-container1">
+        <div className={`tab ${activeTab === 'buyer' ? 'active' : ''}`} onClick={() => handleTabClick('buyer')}>
+            <h2>Buyer</h2>
+            {activeTab === 'buyer' && <div className="orange-underline3"></div>}
+        </div>
+        <div className={`tab ${activeTab === 'supplier' ? 'active' : ''}`} onClick={() => handleTabClick('supplier')}>
+            <h2>Supplier</h2>
+            {activeTab === 'supplier' && <div className="orange-underline3"></div>}
+        </div>
+    </div>
+    {activeTab === 'buyer' && (
+        <div>
+            <div className="tick-icon-text">
+                <div className="green-circle">
+                    <FaCheck className="green-icon" />
                 </div>
+                <p>Post your requirements</p>
+            </div>
+            <div className="tick-icon-text">
+                <div className="green-circle">
+                    <FaCheck className="green-icon" />
+                </div>
+                <p>Sit back for multiple suppliers to contact you.</p>
+            </div>
+            <div className="tick-icon-text">
+                <div className="green-circle">
+                    <FaCheck className="green-icon" />
+                </div>
+                <p>Choose among the suppliers based on the ratings and reviews.</p>
+            </div>
+        </div>
+    )}
+    {activeTab === 'supplier' && (
+        <div>
+            <div className="tick-icon-text">
+                <div className="green-circle">
+                    <FaCheck className="green-icon" />
+                </div>
+                <p>Complete your profile and get verified.</p>
+            </div>
+            <div className="tick-icon-text">
+                <div className="green-circle">
+                    <FaCheck className="green-icon" />
+                </div>
+                <p>Choose service tags and get notified about each opportunity.</p>
+            </div>
+            <div className="tick-icon-text">
+                <div className="green-circle">
+                    <FaCheck className="green-icon" />
+                </div>
+                <p>Contact buyers, and expand your business.</p>
+            </div>
+        </div>
+    )}
+</div>
             </div>
             <div className="supplier-box">
                 <div className="text-container">
@@ -133,6 +136,8 @@ const Home = () => {
                 </div>
                 <button className="get-verified-button">Get Verified</button>
             </div>
+            <HowItWorks/>
+            <Footer/>
         </div>
     );
 };

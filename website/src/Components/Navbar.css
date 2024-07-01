@@ -25,6 +25,7 @@
     /* font-weight: bold; */
     background-color: white;
     padding: 10px 15px;
+    font-family: 'Roboto';
   }
   .nav-link1{
     margin-right: 20px;
@@ -33,12 +34,16 @@
     /* font-weight: bold; */
     background-color: white;
     padding: 10px 15px;
+    font-family: 'Roboto';
+    margin-top: -8px;
+
     
   }
   
   .nav-dropdown {
     display: flex;
     align-items: center;
+    /* margin-top: -10px; */
     /* font-size: 20px; */
   }
   .dropdown-icon{
@@ -63,4 +68,8 @@
     background-color: green;
     color: white;
   }
+  .dropdown-arrow {
+    font-size: 1.5rem; /* Adjust this value to increase the size */
+    /* margin-bottom: 20px; */
+}
   
